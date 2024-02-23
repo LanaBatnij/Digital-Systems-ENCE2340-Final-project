@@ -1,0 +1,8 @@
+module lana ( w, i , e);
+input w[0:1] ,e;
+output i{0:3];
+assign i[0] = !w[0] && !w[1] ;
+assign i[1] = !w[0] && w[1];
+assign i[2] = w[0] && !w[1] ;
+assign i[3]= w[0] && w[1] ;
+endmodule 
